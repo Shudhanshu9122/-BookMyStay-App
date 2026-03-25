@@ -2,7 +2,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class BookingHistory {
+import java.io.Serializable;
+
+public class BookingHistory implements Serializable {
+    private static final long serialVersionUID = 1L;
     private List<Reservation> history;
 
     public BookingHistory() {

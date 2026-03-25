@@ -1,7 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class RoomInventory {
+import java.io.Serializable;
+
+public class RoomInventory implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Map<String, Integer> inventory;
 
     public RoomInventory() {
